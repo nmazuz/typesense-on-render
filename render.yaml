@@ -17,4 +17,4 @@ services:
   - key: TYPESENSE_ENABLE_CORS
     value: true
   - key: TYPESENSE_ENABLE_CORS
-    value: *
+    value: https://bfritscher.github.io/
