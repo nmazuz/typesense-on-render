@@ -2,9 +2,9 @@ services:
 - type: web
   name: typesense
   env: docker
-  repo: https://github.com/hmbrg/typesense-on-render.git
+  repo: https://github.com/nmazuz/typesense-on-render.git
   plan: starter
-  healthCheckPath: /health
+  healthCheckPath: /healthz
   disk:
     name: typesense-data
     mountPath: /typesense-data
@@ -16,3 +16,5 @@ services:
     value: /typesense-data
   - key: TYPESENSE_ENABLE_CORS
     value: true
+  - key: TYPESENSE_ENABLE_CORS
+    value: *
