@@ -16,5 +16,5 @@ services:
     value: /typesense-data
   - key: TYPESENSE_ENABLE_CORS
     value: true
-  - key: TYPESENSE_ENABLE_CORS
+  - key: TYPESENSE_CORS_DOMAINS
     value: https://bfritscher.github.io/
